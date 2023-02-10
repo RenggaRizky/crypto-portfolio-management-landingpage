@@ -1,0 +1,17 @@
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+#logo a {
+    font-style: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#nav-manu ul {
+    list-style-type: none;
+    display: flex;
+    gap: 0 1rem ;
+}
