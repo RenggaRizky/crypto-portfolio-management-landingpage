@@ -1,7 +1,20 @@
-.font-sm {
-    font-size: 0.875rem
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
 }
 
-.font-lg {
-    font-size: 1.25rem
+/* BUTTON */
+
+.btn-secondary {
+    background-color: #ff7f5c;
+    border: none;
+}
+
+.btn-white {
+    background-color: transparent;
+    border: none;
 }
