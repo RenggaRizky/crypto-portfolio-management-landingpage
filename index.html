@@ -14,10 +14,18 @@
             <nav class="navbar">
                 <div class="logo">
                     <a href="#">Echo</a>
-                    <i class="fa-solid fa-bars hamburger hidden"></i>
+
+                    <label for="hamburger" class="hamburger-wrapper">
+                        <i class="fa fa-bars hamburger"></i>
+                        <input
+                            type="checkbox"
+                            name="hamburger"
+                            id="hamburger"
+                        />
+                    </label>
                 </div>
 
-                <div class="nav-menu">
+                <div class="nav-menu hidden">
                     <ul>
                         <li>Product</li>
                         <li>Template</li>
@@ -26,7 +34,7 @@
                     </ul>
                 </div>
 
-                <div class="btn-nav">
+                <div class="btn-nav hidden">
                     <button class="btn-white">Sign In</button>
                     <button class="btn-secondary">Start Free</button>
                 </div>
@@ -36,5 +44,6 @@
             src="https://kit.fontawesome.com/d8beacd362.js"
             crossorigin="anonymous"
         ></script>
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
