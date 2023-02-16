@@ -4,19 +4,22 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="assets/css/navigation.css" />
         <link rel="stylesheet" href="assets/css/global.css" />
+        <link rel="stylesheet" href="assets/css/header.css" />
+        <link rel="stylesheet" href="assets/css/navigation.css" />
+        <link rel="stylesheet" href="assets/css/section.css">
         <title>Echo | Manajemen Portofolio Crypto</title>
     </head>
     <body>
-        <header>
+        <!-- HERO -->
+        <header class="header">
             <!-- NAVBAR -->
             <nav class="navbar">
                 <div class="logo">
                     <a href="#">Echo</a>
 
                     <label for="hamburger" class="hamburger-wrapper">
-                        <i class="fa fa-bars hamburger"></i>
+                        <i class="fa fa-bars hamburger hidden-icon"></i>
                         <input
                             type="checkbox"
                             name="hamburger"
@@ -39,7 +42,94 @@
                     <button class="btn-secondary">Start Free</button>
                 </div>
             </nav>
+
+            <div class="header-content">
+                <h1 class="hero-title">
+                    Managing your crypto portfolio 
+                    <span class="inline">has never been easier</span>
+                </h1>
+                <p class="hero-desc">
+                    End-to-end payments and financial management in a single solution. Meet 
+                    <span class="inline">the right platform to help realize.</span>
+                </p>
+
+                <div class="header-content-btn-wrapper">
+                    <button class="btn-secondary">Get Started</button>
+                    <div class="btn-play-wrapper">
+                        <button class="btn-play">
+                            <i class="fa fa-play"></i>
+                        </button>
+                        <a href="#" class="link-play">See How It Works</a>
+                    </div>
+                </div>
+
+                <div class="dashboard-container  main-layer">
+                    <div class="dashboard-wrapper">
+                        <div class="dashboard-wrapper">
+                            <div class="dashboard-wrapper">
+                                <img src="assets/img/dashboard.png" class="dashboard-img">
+                                <!-- <div class=dashboard-img></div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
+
+        <section class="content">
+            <!-- RELATED COMPANIES -->
+            <section class="related-companies">
+                <h3 class="title-related-companies">Over 32k+ software  businesses growing with Echo.</h3>
+                <div class="related-companies-img">
+                    <img src="./assets/img/open_zeppelin.png" alt="">
+                    <img src="./assets/img/oracle.png" alt="">
+                    <img src="./assets/img/morpheus.png" alt="">
+                    <img src="./assets/img/samsung.png" alt="">
+                    <img src="./assets/img/monday.com.png" alt="">
+                    <img src="./assets/img/segment.png" alt="">
+                    <img src="./assets/img/protonet.png" alt="">
+                </div>
+            </section>
+
+            <!-- FEATURE 1 -->
+            <section class="our-feature">
+                <div class="of-wrapper">
+                    <img src="./assets/img/feature-1.png" alt="" class="of-img">
+                </div>
+
+                <div class="of-wrapper">
+                    <p class="of-subtitle">Our Feature</p>
+                    <h2 class="of-title">All of your portfolios are linked to your Echo account</h2>
+
+                    <p class="of-desc">
+                        Why kept very ever home mrs. Considered sympathize ten uncommonly occasional assistance sufficient not. 
+                        Letter of on become he tended active enable to. 
+                    </p>
+                    <button class="btn-primary btn">Get Started</button>
+                </div>
+            </section>
+
+            <!-- FEATURE 2 -->
+            <section class="our-feature">
+                <div class="of-wrapper">
+                    <p class="of-subtitle">Our Feature</p>
+                    <h2 class="of-title">All payments can be managed from one account</h2>
+
+                    <p class="of-desc">
+                        Why kept very ever home mrs. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of 
+                        on become he tended active enable to. 
+                    </p>
+                    <button class="btn-primary btn">Get Started</button>
+                </div>
+
+                <div class="of-wrapper">
+                    <img src="./assets/img/feature-2.png" alt="" class="of-img">
+                </div>
+            </section>
+
+        </section>
+
+
         <script
             src="https://kit.fontawesome.com/d8beacd362.js"
             crossorigin="anonymous"

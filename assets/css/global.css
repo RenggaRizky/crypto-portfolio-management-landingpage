@@ -9,6 +9,16 @@
 
 /* BUTTON */
 
+.btn {
+    color: white;
+    padding: 16px 40px;
+}
+
+.btn-primary {
+    background-color: #3734A9;
+    border: none;
+}
+
 .btn-secondary {
     background-color: #ff7f5c;
     border: none;
@@ -18,3 +28,4 @@
     background-color: transparent;
     border: none;
 }
+
