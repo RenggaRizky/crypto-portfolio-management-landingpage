@@ -1,0 +1,101 @@
+.feature {
+    background-color: #3734A9;
+    color: white;
+}
+
+.f-head {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 144px 0 0 0;
+    margin: 0 0 40px 0;
+}
+
+.f-head .f-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    flex-basis: 70%;
+    line-height: 50px;
+    letter-spacing: -0.03em;
+}
+
+.f-head button {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.f-body {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 104px 0;
+}
+
+.f-benefit-list {
+    align-items: center;
+    display: flex;
+    margin: 0 0 34px 0;
+    /* justify-content: space-between; */
+}
+
+.f-benefit-list-number {
+    background-color: rgb(27, 28, 49, 0.2);
+    border-radius: 999px;
+    font-size: 46px;
+    font-weight: 700;
+    height: 95px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    padding: 32px;
+    text-align: center;
+    width: 95px;
+}
+
+.f-benefit-list-text {
+    margin: 0 0 0 28px;
+}
+
+.f-benefit-list-text .f-benefit-list-title {
+    color: #E8F2FF !important; 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;    
+    letter-spacing: -0.02em;
+    margin: 0 0 6px 0;
+}
+
+.f-benefit-list-text  .f-benefit-list-desc {
+    color: #A0B3E9;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18.9045px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+}
+
+.f-img {
+    position: relative;
+}
+
+.f-img .f-play-btn {
+    background-color: white;
+    border-radius: 999px;
+    cursor: pointer;
+    left: 50%;
+    height: 94px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 94px;
+}
+
+.f-play-btn .fa-play {
+    color: #FF7F5C;
+    font-size: 32px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(50%, 25%);
+}
