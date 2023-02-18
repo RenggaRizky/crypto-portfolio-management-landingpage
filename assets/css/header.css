@@ -122,6 +122,13 @@
     }
 }
 
+@media screen and (max-width: 640px){
+    .header-content .hero-title {
+        font-size: 52px; 
+        line-height: 58px;
+    }
+}
+
 @media screen and (max-width: 426px){
     .header-content {
         padding: 0 32px;

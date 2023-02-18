@@ -70,13 +70,17 @@
     color: #A0B3E9;
     font-style: normal;
     font-weight: 500;
-    font-size: 18.9045px;
+    font-size: 18px;
     line-height: 32px;
     letter-spacing: -0.02em;
 }
 
 .f-img {
     position: relative;
+}
+
+.f-img img {
+    width: 100%;
 }
 
 .f-img .f-play-btn {
@@ -98,4 +102,52 @@
     top: 25%;
     left: 25%;
     transform: translate(50%, 25%);
+}
+
+@media screen and (max-width: 1024px) {
+    .f-head {
+        margin: 0 0 56px 0;
+    }
+
+    .f-body {
+        align-items: center;
+    }
+
+    .f-benefit-list-number {
+        font-size: 38px;
+        height: 80px;
+        padding: 24px;
+    }
+    
+    .f-benefit-list-text .f-benefit-list-desc {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .f-benefit-list-text .f-benefit-list-title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .f-img {
+        display: flex;
+        justify-content: end;
+    }
+
+    .f-img img {
+        width: 90%;
+    }
+
+    .f-img .f-play-btn {
+        left: 55%;
+        height: 94px;
+        width: 94px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .f-head .f-title {
+        font-size: 36px;
+        line-height: 42px;
+    }
 }
