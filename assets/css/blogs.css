@@ -1,0 +1,94 @@
+.blog {
+    background-color: #fafbff;
+    padding: 94px 0;
+}
+
+.company-info {
+    align-items: center;
+    background-color: white;
+    border: 1px solid #DEE1E6;
+    border-radius: 20px;
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+    margin: 0 0 72px 0;
+    padding: 40px 44px;
+}
+
+.ci-title {
+    font-size: 34px;
+    font-weight: 800;
+    flex-basis: 35%;
+    line-height: 46px;
+    letter-spacing: -0.03em;
+}
+
+.ci-details, .ci-detail, .ci-missions  {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.ci-details {
+    gap: 30px;
+}
+
+.ci-detail {
+    gap: 18px;
+}
+
+.ci-detail i {
+    background-color: #EBECE8;
+    border-radius: 5px;
+    font-size: 28px;
+    height: 60px;
+    padding: 10px;
+    text-align: center;
+    width: 60px;
+}
+
+
+.ci-detail-desc {
+    color: #64607D;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+}
+
+.ci-missions {
+    gap: 30px;
+    margin: 0 0 102px 0;
+}
+
+.ci-mission {
+    background: #FFFFFF;
+    box-shadow: 0px 141.825px 113.46px rgba(0, 0, 0, 0.03), 0px 91.9235px 66.4476px rgba(0, 0, 0, 0.0227778), 0px 54.6288px 36.1391px rgba(0, 0, 0, 0.0182222), 0px 28.365px 18.4372px rgba(0, 0, 0, 0.015), 0px 11.5561px 9.24488px rgba(0, 0, 0, 0.0117778), 0px 2.62639px 4.46486px rgba(0, 0, 0, 0.00722222);
+    border-radius: 20px;
+    padding: 38px 56px;
+    text-align: center;
+
+}
+
+.ci-mission-title {
+    color: #000000;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: -0.03em;
+    margin: 0 0 20px 0;
+}
+
+.ci-mission-desc {
+    color: #64607D;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    margin: 0 0 36px 0;
+}
+
+.ci-mission button {
+    border-radius: 10px;
+}
