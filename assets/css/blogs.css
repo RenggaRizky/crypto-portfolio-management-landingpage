@@ -23,7 +23,7 @@
     letter-spacing: -0.03em;
 }
 
-.ci-details, .ci-detail, .ci-missions  {
+.ci-details, .ci-detail, .ci-missions, .rb-top {
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -91,4 +91,327 @@
 
 .ci-mission button {
     border-radius: 10px;
+}
+
+.recent-blogs {
+    margin: 0 0 156px 0;
+}
+
+.rb-name {
+    color: #000000;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 66px;
+    letter-spacing: -0.03em;
+    margin: 0 0 72px 0;
+}
+
+.rb-top, .rb-bottom  {
+    background-color: white;
+}
+
+.rb-subtitle {
+    color: #000000;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0.07em;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+}
+
+.rb-title {
+    color: #000000;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+}
+
+.rb-link {
+    align-items: center;
+    color: #1B1C31 !important;
+    display: flex;
+    gap: 10px;
+}
+
+.rb-link-text {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+}
+
+.rb-link-icon {
+    font-size: 16px;
+}
+
+.rb-img-top {
+    width: 30%;
+}
+
+.rb-top {
+    margin: 0 0 30px 0;
+}
+
+.rb-top > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-basis: 50%;
+    gap: 68px 0;
+    padding: 34px 28px;
+}
+
+.rb-bottom  {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+    padding: 24px 32px;
+}
+
+.rb-bottom > div {
+    flex-basis: 33.4%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.rb-img-bottom {
+    margin: 58px 0 0 0;
+    height: 202px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .company-info {
+        flex-direction: column;
+    }
+
+    .rb-top > div {
+        flex-basis: auto;
+    }
+
+    .rb-title{
+        font-size: 26px;
+        line-height: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .blog {
+        background-color: #fafbff;
+        padding: 94px 0 0 0;
+    }
+    
+    .company-info {
+        gap: 32px;
+        margin: 0 0 64px 0;
+        padding: 36px 38px;
+    }
+
+    .ci-title {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .ci-details {
+        gap: 16px;
+    }
+
+    .ci-detail-desc {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .ci-missions {
+        align-items: start;
+        gap: 16px;
+    }
+
+    .ci-mission {
+        margin: 0 0 88px 0;
+        padding: 38px 32px;
+    }
+
+    .ci-mission-title {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .ci-mission-desc {
+        line-height: 22px;
+    }
+
+    .rb-name {
+        font-size: 42px;
+        line-height: 50px;
+        margin: 0 0 64px 0;
+        text-align: center;
+    }
+
+    .rb-subtitle {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .rb-top > div {
+        gap: 54px 0;
+        padding: 16px 14px;
+    }
+
+    .rb-img-top {
+        width: 40%;
+    }
+
+    .rb-link-text {
+        font-size: 14px;
+    }
+
+    .rb-bottom {
+        padding: 24px 0;
+        flex-direction: column;
+    }
+
+    .rb-bottom > div {
+        flex-direction: row;
+    }
+
+    .rb-img-bottom {
+        margin: 0 0 0 0;
+        height: auto;
+        width: 35%;
+    }
+
+    .rb-title{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .company-info {
+        text-align: center;
+    }
+
+    .ci-detail {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .ci-detail-desc {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .ci-missions {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .ci-mission {
+        margin: 0 0 0 0;
+    }
+
+    .rb-name {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .rb-title {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+}
+
+@media screen and (max-width: 426px) {
+    .company-info {
+        margin: 0 0 48px 0;
+        text-align: left;
+    }
+
+    .ci-title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .ci-details {
+        align-items: self-start;
+        flex-direction: column;
+    }
+
+    .ci-detail {
+        flex-direction: row;
+    }
+
+    .ci-mission {
+        padding: 32px 28px;
+       
+    }
+
+    .ci-mission-title {
+        font-size: 28px;
+        margin: 0 0 16px 0;
+        line-height: 34px;
+        text-align: left;
+    }
+
+    .ci-mission-desc {
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 0 32px 0;
+        text-align: left;
+    }
+
+    .ci-mission button {
+        width: 100%;
+    }
+
+    .rb-name {
+        font-size: 32px;
+        margin: 0 0 48px 0;
+        line-height: 38px;
+    }
+
+    .rb-subtitle {
+        font-size: 12px;
+        margin: 0 0 12px 0;
+        line-height: 18px;
+    }
+
+    .rb-title {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .rb-top {
+        margin: 0 0 22px 0;
+    }
+
+    .rb-top > div {
+        gap: 32px 0;
+        padding: 16px 0;
+    }
+
+    .rb-img-top {
+        width: 35%;
+    }
+
+    .rb-bottom > div {
+        padding: 16px 0;
+    }
+
+    .rb-img-bottom {
+        width: 30%;
+    }
+
+    .rb-link-text {
+        font-size: 12px;
+    }
 }

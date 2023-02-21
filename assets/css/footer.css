@@ -1,0 +1,33 @@
+.footer {
+    background-color: #1B1C31;
+}
+
+.join-waitlist {
+    padding: 72px 0;
+    text-align: center;
+}
+
+.jw-title {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 53px;
+    line-height: 70px;
+    letter-spacing: -0.02em;
+    margin: 0 0 24px 0;
+}
+
+.join-waitlist > button {
+    border-radius: 5px;
+    color: #121313;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.join-waitlist > button > span > i {
+    font-size: 18px;
+    margin-left: 10px;
+}
