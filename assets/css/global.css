@@ -24,15 +24,41 @@
     border: none;
 }
 
+.btn-primary:hover {
+    background-color: #5955ca;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-primary:active {
+    outline: rgb(55, 52, 169, 0.5) solid 5px;
+    transition: none;
+}
+
 .btn-secondary {
     background-color: #ff7f5c;
     border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #ed6f4c;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-secondary:active {
+    outline: rgb(255, 127, 92, 0.5) solid 5px;
+    transition: none;
 }
 
 .btn-white {
     background-color: transparent;
     border: none;
 }
+
+.btn-white:hover {
+    color: #ff7f5c;
+    transition: all 0.5s ease-in-out;
+}
+
 
 @media screen and (max-width: 1024px) {
     .wrapper {

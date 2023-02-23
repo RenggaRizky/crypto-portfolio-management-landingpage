@@ -95,6 +95,16 @@
     width: 94px;
 }
 
+.f-img .f-play-btn:hover {
+    background-color: rgb(240, 240, 240);
+    transition: all 0.5s ease-in-out;
+}
+
+.f-img .f-play-btn:active {
+    outline: rgba(255, 255, 255, 0.5) solid 5px;
+    transition: none;
+}
+
 .f-play-btn .fa-play {
     color: #FF7F5C;
     font-size: 32px;

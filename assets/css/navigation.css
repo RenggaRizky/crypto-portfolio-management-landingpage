@@ -30,6 +30,12 @@
 .nav-menu ul li {
     cursor: pointer;
     color: white;
+    position: relative;
+}
+
+.nav-menu ul li:hover {
+    color: #ff7f5c;
+    transition: all 0.5s ease-in-out;
 }
 
 .btn-nav button {

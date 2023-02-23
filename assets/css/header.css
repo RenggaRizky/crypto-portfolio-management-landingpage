@@ -63,9 +63,20 @@
     padding: 18px;
 }
 
+.btn-play-wrapper .btn-play:hover {
+    background-color: #14be83;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-play-wrapper .btn-play:active {
+    outline: rgb(34, 212, 151, 0.5) solid 5px;
+    transition: none;
+}
+
 .fa-play {
     color: white;
     font-size: 18px;
+    transition: all 0.5s ease-in-out;
     width: 26px;
 }
 
@@ -172,12 +183,32 @@
         width: 100%;
     }
 
+    .btn-play-wrapper:hover {
+        background-color: #14be83;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .btn-play-wrapper:active {
+        outline: rgb(34, 212, 151, 0.5) solid 5px;
+        transition: none;
+    }
+
     .btn-play-wrapper .btn-play {
         background-color: transparent;
         border-radius: 0px;
         padding: 0px;
     }
 
+    .btn-play-wrapper .btn-play:hover {
+        background-color: #14be83;
+        transition: none;
+    }
+    
+    .btn-play-wrapper .btn-play:active {
+        outline: none;
+        transition: none;
+    }
+    
     .btn-play-wrapper .link-play {
         font-size: 14px;
         margin: 0 0 0 12px;

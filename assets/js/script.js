@@ -15,3 +15,30 @@ hamburger.addEventListener("click", () => {
         icon.classList.replace("fa-close", "fa-bars");
     }
 });
+
+const a = document.querySelectorAll('a');
+a.forEach(element => {
+    element.addEventListener('click', (event) => event.preventDefault())
+});
+
+const btnPlayWrapper = document.querySelector('.btn-play-wrapper');
+btnPlayWrapper.addEventListener('mouseenter', () => {
+    const faPlay = btnPlayWrapper.querySelector('.btn-play .fa-play');
+    faPlay.style.transform = 'scale(1.2)'
+})
+
+btnPlayWrapper.addEventListener('mouseleave', () => {
+    const faPlay = btnPlayWrapper.querySelector('.btn-play .fa-play');
+    faPlay.style.transform = 'scale(1)'
+})
+
+const fPlayBtn = document.querySelector('.f-play-btn');
+fPlayBtn.addEventListener('mouseenter', () => {
+    const faPlay = fPlayBtn.querySelector('.f-play-btn .fa-play');
+    faPlay.style.transform = 'scale(1.2) translate(45%, 20%)'
+})
+
+fPlayBtn.addEventListener('mouseleave', () => {
+    const faPlay = fPlayBtn.querySelector('.f-play-btn .fa-play');
+    faPlay.style.transform = 'scale(1) translate(50%, 25%)'
+})

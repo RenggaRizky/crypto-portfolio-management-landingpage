@@ -131,14 +131,8 @@
     letter-spacing: -0.02em;
 }
 
-.rb-link {
-    align-items: center;
-    color: #1B1C31 !important;
-    display: flex;
-    gap: 10px;
-}
-
 .rb-link-text {
+    color: #1B1C31;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 600;
@@ -147,8 +141,14 @@
     text-decoration: none;
 }
 
+.rb-link-text:hover {
+    color: #393a53;
+    transition: all 0.5s ease-in-out;
+}
+
 .rb-link-icon {
     font-size: 16px;
+    margin: 0 0 0 10px;
 }
 
 .rb-img-top {
