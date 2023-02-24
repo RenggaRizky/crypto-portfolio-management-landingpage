@@ -5,14 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="assets/css/global.css" />
+        <link rel="stylesheet" href="assets/css/modal.css" />
         <link rel="stylesheet" href="assets/css/header.css" />
         <link rel="stylesheet" href="assets/css/navigation.css" />
-        <link rel="stylesheet" href="assets/css/content.css">
-        <link rel="stylesheet" href="assets/css/feature.css">
-        <link rel="stylesheet" href="assets/css/blogs.css">
-        <link rel="stylesheet" href="assets/css/footer.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="assets/css/content.css" />
+        <link rel="stylesheet" href="assets/css/feature.css" />
+        <link rel="stylesheet" href="assets/css/blogs.css" />
+        <link rel="stylesheet" href="assets/css/footer.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
         <title>Echo | Manajemen Portofolio Crypto</title>
     </head>
     <body>
@@ -20,47 +20,123 @@
         <header class="header">
             <!-- NAVBAR -->
             <nav class="navbar">
-                <div class="logo" data-aos="zoom-in-down">
+                <div class="logo">
                     <a href="">Echo</a>
 
                     <label for="hamburger" class="hamburger-wrapper">
                         <i class="fa fa-bars hamburger hidden-icon"></i>
-                        <input
-                            type="checkbox"
-                            name="hamburger"
-                            id="hamburger"
-                        />
+                        <input type="checkbox" name="hamburger" id="hamburger" />
                     </label>
                 </div>
 
                 <div class="nav-menu hidden">
                     <ul>
-                        <li data-aos="zoom-in-down">Product</li>
-                        <li data-aos="zoom-in-down">Template</li>
-                        <li data-aos="zoom-in-down">Blog</li>
-                        <li data-aos="zoom-in-down">Pricing</li>
+                        <li>Product</li>
+                        <li>Template</li>
+                        <li>Blog</li>
+                        <li>Pricing</li>
                     </ul>
                 </div>
 
                 <div class="btn-nav hidden">
-                    <button class="btn-white" data-aos="zoom-in-down">Sign In</button>
-                    <button class="btn-secondary" data-aos="zoom-in-down">Start Free</button>
+                    <button class="btn-white" id="btnSignIn">Sign In</button>
+                    <button class="btn-secondary">Start Free</button>
+                </div>
+
+                <div id="modalWrapper" class="modal">
+                    <form class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="form-modal">
+                            <div class="logo logo-modal">
+                                <a href="">Echo</a>
+                            </div>
+
+                            <div class="title-modal-wrapper">
+                                <p class="title-modal">Login to your Account</p>
+                                <span class="subtitle-modal">Get started with our app, just create an account and enjoy the experience.</span>
+                            </div>
+
+                            <div class="input_container">
+                                <svg fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#141B34" d="M7 8.5L9.94202 10.2394C11.6572 11.2535 12.3428 11.2535 14.058 10.2394L17 8.5"></path>
+                                    <path
+                                        stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                        stroke="#141B34"
+                                        d="M2.01577 13.4756C2.08114 16.5412 2.11383 18.0739 3.24496 19.2094C4.37608 20.3448 5.95033 20.3843 9.09883 20.4634C11.0393 20.5122 12.9607 20.5122 14.9012 20.4634C18.0497 20.3843 19.6239 20.3448 20.7551 19.2094C21.8862 18.0739 21.9189 16.5412 21.9842 13.4756C22.0053 12.4899 22.0053 11.5101 21.9842 10.5244C21.9189 7.45886 21.8862 5.92609 20.7551 4.79066C19.6239 3.65523 18.0497 3.61568 14.9012 3.53657C12.9607 3.48781 11.0393 3.48781 9.09882 3.53656C5.95033 3.61566 4.37608 3.65521 3.24495 4.79065C2.11382 5.92608 2.08114 7.45885 2.01576 10.5244C1.99474 11.5101 1.99475 12.4899 2.01577 13.4756Z"
+                                    ></path>
+                                </svg>
+                                <input placeholder="name@mail.com" title="Inpit title" name="input-name" type="text" class="input_field" id="email_field" />
+                            </div>
+
+                            <div class="input_container">
+                                <svg fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <path stroke-linecap="round" stroke-width="1.5" stroke="#141B34" d="M18 11.0041C17.4166 9.91704 16.273 9.15775 14.9519 9.0993C13.477 9.03404 11.9788 9 10.329 9C8.67911 9 7.18091 9.03404 5.70604 9.0993C3.95328 9.17685 2.51295 10.4881 2.27882 12.1618C2.12602 13.2541 2 14.3734 2 15.5134C2 16.6534 2.12602 17.7727 2.27882 18.865C2.51295 20.5387 3.95328 21.8499 5.70604 21.9275C6.42013 21.9591 7.26041 21.9834 8 22"></path>
+                                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#141B34" d="M6 9V6.5C6 4.01472 8.01472 2 10.5 2C12.9853 2 15 4.01472 15 6.5V9"></path>
+                                    <path
+                                        fill="#141B34"
+                                        d="M21.2046 15.1045L20.6242 15.6956V15.6956L21.2046 15.1045ZM21.4196 16.4767C21.7461 16.7972 22.2706 16.7924 22.5911 16.466C22.9116 16.1395 22.9068 15.615 22.5804 15.2945L21.4196 16.4767ZM18.0228 15.1045L17.4424 14.5134V14.5134L18.0228 15.1045ZM18.2379 18.0387C18.5643 18.3593 19.0888 18.3545 19.4094 18.028C19.7299 17.7016 19.7251 17.1771 19.3987 16.8565L18.2379 18.0387ZM14.2603 20.7619C13.7039 21.3082 12.7957 21.3082 12.2394 20.7619L11.0786 21.9441C12.2794 23.1232 14.2202 23.1232 15.4211 21.9441L14.2603 20.7619ZM12.2394 20.7619C11.6914 20.2239 11.6914 19.358 12.2394 18.82L11.0786 17.6378C9.86927 18.8252 9.86927 20.7567 11.0786 21.9441L12.2394 20.7619ZM12.2394 18.82C12.7957 18.2737 13.7039 18.2737 14.2603 18.82L15.4211 17.6378C14.2202 16.4587 12.2794 16.4587 11.0786 17.6378L12.2394 18.82ZM14.2603 18.82C14.8082 19.358 14.8082 20.2239 14.2603 20.7619L15.4211 21.9441C16.6304 20.7567 16.6304 18.8252 15.4211 17.6378L14.2603 18.82ZM20.6242 15.6956L21.4196 16.4767L22.5804 15.2945L21.785 14.5134L20.6242 15.6956ZM15.4211 18.82L17.8078 16.4767L16.647 15.2944L14.2603 17.6377L15.4211 18.82ZM17.8078 16.4767L18.6032 15.6956L17.4424 14.5134L16.647 15.2945L17.8078 16.4767ZM16.647 16.4767L18.2379 18.0387L19.3987 16.8565L17.8078 15.2945L16.647 16.4767ZM21.785 14.5134C21.4266 14.1616 21.0998 13.8383 20.7993 13.6131C20.4791 13.3732 20.096 13.1716 19.6137 13.1716V14.8284C19.6145 14.8284 19.619 14.8273 19.6395 14.8357C19.6663 14.8466 19.7183 14.8735 19.806 14.9391C19.9969 15.0822 20.2326 15.3112 20.6242 15.6956L21.785 14.5134ZM18.6032 15.6956C18.9948 15.3112 19.2305 15.0822 19.4215 14.9391C19.5091 14.8735 19.5611 14.8466 19.5879 14.8357C19.6084 14.8273 19.6129 14.8284 19.6137 14.8284V13.1716C19.1314 13.1716 18.7483 13.3732 18.4281 13.6131C18.1276 13.8383 17.8008 14.1616 17.4424 14.5134L18.6032 15.6956Z"
+                                    ></path>
+                                </svg>
+                                <input placeholder="Password" title="Inpit title" name="input-name" type="password" class="input_field" id="password_field" />
+                            </div>
+
+                            <button title="Sign In" type="submit" class="sign-in_btn">
+                                <span>Sign In</span>
+                            </button>
+
+                            <div class="separator">
+                                <hr class="line" />
+                                <span>Or</span>
+                                <hr class="line" />
+                            </div>
+
+                            <button title="Sign In" type="submit" class="sign-in_ggl">
+                                <svg height="18" width="18" viewBox="0 0 32 32" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <path d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z" id="A"></path>
+                                    </defs>
+                                    <clipPath id="B"></clipPath>
+                                    <g transform="matrix(.727273 0 0 .727273 -.954545 -1.45455)">
+                                        <path fill="#fbbc05" clip-path="url(#B)" d="M0 37V11l17 13z"></path>
+                                        <path fill="#ea4335" clip-path="url(#B)" d="M0 11l17 13 7-6.1L48 14V0H0z"></path>
+                                        <path fill="#34a853" clip-path="url(#B)" d="M0 37l30-23 7.9 1L48 0v48H0z"></path>
+                                        <path fill="#4285f4" clip-path="url(#B)" d="M48 48L17 24l-4-3 35-10z"></path>
+                                    </g>
+                                </svg>
+                                <span>Sign In with Google</span>
+                            </button>
+                            <button title="Sign In" type="submit" class="sign-in_apl">
+                                <svg preserveAspectRatio="xMidYMid" version="1.1" viewBox="0 0 256 315" height="20px" width="16px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path
+                                            fill="#ffffff"
+                                            d="M213.803394,167.030943 C214.2452,214.609646 255.542482,230.442639 256,230.644727 C255.650812,231.761357 249.401383,253.208293 234.24263,275.361446 C221.138555,294.513969 207.538253,313.596333 186.113759,313.991545 C165.062051,314.379442 158.292752,301.507828 134.22469,301.507828 C110.163898,301.507828 102.642899,313.596301 82.7151126,314.379442 C62.0350407,315.16201 46.2873831,293.668525 33.0744079,274.586162 C6.07529317,235.552544 -14.5576169,164.286328 13.147166,116.18047 C26.9103111,92.2909053 51.5060917,77.1630356 78.2026125,76.7751096 C98.5099145,76.3877456 117.677594,90.4371851 130.091705,90.4371851 C142.497945,90.4371851 165.790755,73.5415029 190.277627,76.0228474 C200.528668,76.4495055 229.303509,80.1636878 247.780625,107.209389 C246.291825,108.132333 213.44635,127.253405 213.803394,167.030988 M174.239142,50.1987033 C185.218331,36.9088319 192.607958,18.4081019 190.591988,0 C174.766312,0.636050225 155.629514,10.5457909 144.278109,23.8283506 C134.10507,35.5906758 125.195775,54.4170275 127.599657,72.4607932 C145.239231,73.8255433 163.259413,63.4970262 174.239142,50.1987249"
+                                        ></path>
+                                    </g>
+                                </svg>
+                                <span>Sign In with Apple</span>
+                            </button>
+
+                            <p class="note">Terms of use &amp; Conditions</p>
+                        </div>
+                    </form>
                 </div>
             </nav>
 
             <div class="header-content">
-                <h1 class="hero-title"  data-aos="fade-down">
-                    Managing your crypto portfolio 
+                <h1 class="hero-title">
+                    Managing your crypto portfolio
                     <span class="inline">has never been easier</span>
                 </h1>
-                <p class="hero-desc" data-aos="fade-down">
-                    End-to-end payments and financial management in a single solution. Meet 
+                <p class="hero-desc">
+                    End-to-end payments and financial management in a single solution. Meet
                     <span class="inline">the right platform to help realize.</span>
                 </p>
 
                 <div class="header-content-btn-wrapper">
-                    <button class="btn-secondary" data-aos="fade-down">Get Started</button>
-                    <div class="btn-play-wrapper" data-aos="fade-down">
+                    <button class="btn-secondary">Get Started</button>
+                    <div class="btn-play-wrapper">
                         <button class="btn-play">
                             <i class="fa fa-play"></i>
                         </button>
@@ -68,11 +144,11 @@
                     </div>
                 </div>
 
-                <div class="dashboard-container  main-layer">
-                    <div class="dashboard-wrapper" data-aos="fade-down">
+                <div class="dashboard-container main-layer">
+                    <div class="dashboard-wrapper">
                         <div class="dashboard-wrapper">
                             <div class="dashboard-wrapper">
-                                <img src="assets/img/dashboard.png" class="dashboard-img">
+                                <img src="assets/img/dashboard.png" class="dashboard-img" />
                             </div>
                         </div>
                     </div>
@@ -83,115 +159,89 @@
         <section class="content wrapper">
             <!-- RELATED COMPANIES -->
             <section class="related-companies">
-                <h3 class="title-related-companies" data-aos="fade-down">Over 32k+ software  businesses growing with Echo.</h3>
+                <h3 class="title-related-companies">Over 32k+ software businesses growing with Echo.</h3>
                 <div class="related-companies-img">
-                    <img src="./assets/img/open_zeppelin.png" alt="" data-aos="zoom-in-down">
-                    <img src="./assets/img/oracle.png" alt="" data-aos="zoom-in-down">
-                    <img src="./assets/img/morpheus.png" alt="" data-aos="zoom-in-down">
-                    <img src="./assets/img/samsung.png" alt="" data-aos="zoom-in-down">
-                    <img src="./assets/img/monday.com.png" alt="" data-aos="zoom-in-down">
-                    <img src="./assets/img/segment.png" alt="" data-aos="zoom-in-down">
-                    <img src="./assets/img/protonet.png" alt="" data-aos="zoom-in-down">
+                    <img src="./assets/img/open_zeppelin.png" alt="" />
+                    <img src="./assets/img/oracle.png" alt="" />
+                    <img src="./assets/img/morpheus.png" alt="" />
+                    <img src="./assets/img/samsung.png" alt="" />
+                    <img src="./assets/img/monday.com.png" alt="" />
+                    <img src="./assets/img/segment.png" alt="" />
+                    <img src="./assets/img/protonet.png" alt="" />
                 </div>
             </section>
 
             <!-- FEATURE 1 -->
-            <section class="our-feature feature-1" data-aos="fade-left">
-                <div class="of-wrapper" >
-                    <img src="./assets/img/feature-1.png" alt="feature-1" class="of-img">
+            <section class="our-feature feature-1">
+                <div class="of-wrapper">
+                    <img src="./assets/img/feature-1.png" alt="feature-1" class="of-img" />
                 </div>
 
                 <div class="of-wrapper">
                     <p class="of-subtitle">Our Feature</p>
                     <h2 class="of-title">All of your portfolios are linked to your Echo account</h2>
 
-                    <p class="of-desc">
-                        Why kept very ever home mrs. Considered sympathize ten uncommonly occasional assistance sufficient not. 
-                        Letter of on become he tended active enable to. 
-                    </p>
+                    <p class="of-desc">Why kept very ever home mrs. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.</p>
                     <button class="btn-primary btn">Get Started</button>
                 </div>
             </section>
 
             <!-- FEATURE 2 -->
-            <section class="our-feature feature-2" data-aos="fade-right">
-                <div class="of-wrapper" >
+            <section class="our-feature feature-2">
+                <div class="of-wrapper">
                     <p class="of-subtitle">Our Feature</p>
                     <h2 class="of-title">All payments can be managed from one account</h2>
 
-                    <p class="of-desc">
-                        Why kept very ever home mrs. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of 
-                        on become he tended active enable to. 
-                    </p>
+                    <p class="of-desc">Why kept very ever home mrs. Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.</p>
                     <button class="btn-primary btn">Get Started</button>
                 </div>
 
                 <div class="of-wrapper">
-                    <img src="./assets/img/feature-2.png" alt="feature-2" class="of-img">
+                    <img src="./assets/img/feature-2.png" alt="feature-2" class="of-img" />
                 </div>
             </section>
-
         </section>
 
         <section class="feature">
             <div class="wrapper">
                 <!-- FEATURE BENEFIT -->
-                <div class="f-head" data-aos="fade-down">
+                <div class="f-head">
                     <h3 class="f-title">Yet preference connection unpleasant yet melancholy but end appearance</h3>
                     <button class="btn btn-secondary">Get Started Now</button>
                 </div>
-    
+
                 <div class="f-body">
                     <div class="f-benefit">
-                        <div class="f-benefit-list" data-aos="zoom-in-up">
-                            <div class="f-benefit-list-number">
-                                1
-                            </div>
+                        <div class="f-benefit-list">
+                            <div class="f-benefit-list-number">1</div>
                             <div class="f-benefit-list-text">
-                                <p class="f-benefit-list-title">
-                                    First Working Process
-                                </p>
-                                <p class="f-benefit-list-desc">
-                                    Blessing it ladyship on sensible judgment settling outweigh.
-                                </p>
+                                <p class="f-benefit-list-title">First Working Process</p>
+                                <p class="f-benefit-list-desc">Blessing it ladyship on sensible judgment settling outweigh.</p>
                             </div>
                         </div>
-    
-                        <div class="f-benefit-list" data-aos="zoom-in-up">
-                            <div class="f-benefit-list-number">
-                                2
-                            </div>
+
+                        <div class="f-benefit-list">
+                            <div class="f-benefit-list-number">2</div>
                             <div class="f-benefit-list-text">
-                                <p class="f-benefit-list-title">
-                                    Dedicated Team
-                                </p>
-                                <p class="f-benefit-list-desc">
-                                    Warmly little before cousin sussex entire men set.
-                                </p>
+                                <p class="f-benefit-list-title">Dedicated Team</p>
+                                <p class="f-benefit-list-desc">Warmly little before cousin sussex entire men set.</p>
                             </div>
                         </div>
-    
-                        <div class="f-benefit-list" data-aos="zoom-in-up">
-                            <div class="f-benefit-list-number">
-                                3
-                            </div>
+
+                        <div class="f-benefit-list">
+                            <div class="f-benefit-list-number">3</div>
                             <div class="f-benefit-list-text">
-                                <p class="f-benefit-list-title">
-                                    24/7 Hours Support
-                                </p>
-                                <p class="f-benefit-list-desc">
-                                    And excellence partiality estimating terminated day everything.
-                                </p>
+                                <p class="f-benefit-list-title">24/7 Hours Support</p>
+                                <p class="f-benefit-list-desc">And excellence partiality estimating terminated day everything.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="f-img" data-aos="zoom-in">
-                        <img src="./assets/img/feature-video.png" alt="">
+                    <div class="f-img">
+                        <img src="./assets/img/feature-video.png" alt="" />
                         <div class="f-play-btn">
                             <i class="fa fa-play"></i>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </section>
@@ -199,9 +249,9 @@
         <section class="blog">
             <div class="wrapper">
                 <!-- VALUE PROPS -->
-                <section class="company-info" data-aos="fade-down">
+                <section class="company-info">
                     <h4 class="ci-title">Germany-based <span class="inline">& GDPR Compliant</span></h4>
-    
+
                     <div class="ci-details">
                         <div class="ci-detail">
                             <i class="bi bi-shield-check"></i>
@@ -217,22 +267,22 @@
                         </div>
                     </div>
                 </section>
-                
+
                 <section class="ci-missions">
-                    <div class="ci-mission" data-aos="zoom-in-down">
+                    <div class="ci-mission">
                         <h3 class="ci-mission-title">Outward clothes promise at gravity.</h3>
                         <p class="ci-mission-desc">End-to-end payments and financial management in a single solution. Meet the right platform to help realize.</p>
                         <button class="btn-primary btn">Read More</button>
                     </div>
-                    <div class="ci-mission" data-aos="zoom-in-down">
+                    <div class="ci-mission">
                         <h3 class="ci-mission-title">Sufficient particular impossible.</h3>
                         <p class="ci-mission-desc">End-to-end payments and financial management in a single solution. Meet the right platform to help realize.</p>
                         <button class="btn-primary btn">Read More</button>
                     </div>
                 </section>
-    
+
                 <!-- RECENT BLOGS -->
-                <section class="recent-blogs" data-aos="fade-down">
+                <section class="recent-blogs">
                     <h3 class="rb-name">Recent Blogs</h3>
 
                     <div class="rb-top">
@@ -243,21 +293,22 @@
                             </div>
 
                             <span class="rb-link">
-                                <a href="" class="rb-link-text">Read More
+                                <a href="" class="rb-link-text"
+                                    >Read More
                                     <i class="bi bi-arrow-right rb-link-icon"></i>
                                 </a>
                             </span>
                         </div>
-                        <img src="./assets/img/blog-1.jpg" alt="" class="rb-img-top">
+                        <img src="./assets/img/blog-1.jpg" alt="" class="rb-img-top" />
                     </div>
 
                     <div class="rb-bottom">
                         <div>
                             <div>
                                 <p class="rb-subtitle">Best Practices</p>
-                                <h5 class="rb-title">Partiality on or continuing particular principles as. </h5>
+                                <h5 class="rb-title">Partiality on or continuing particular principles as.</h5>
                             </div>
-                            <img src="./assets/img/blog-2.jpg" alt="" class="rb-img-bottom">
+                            <img src="./assets/img/blog-2.jpg" alt="" class="rb-img-bottom" />
                         </div>
 
                         <div>
@@ -265,7 +316,7 @@
                                 <p class="rb-subtitle">Best Practices</p>
                                 <h5 class="rb-title">Village did removed enjoyed explain</h5>
                             </div>
-                            <img src="./assets/img/blog-3.jpg" alt="" class="rb-img-bottom">
+                            <img src="./assets/img/blog-3.jpg" alt="" class="rb-img-bottom" />
                         </div>
 
                         <div>
@@ -273,7 +324,7 @@
                                 <p class="rb-subtitle">Best Practices</p>
                                 <h5 class="rb-title">Wise busy past both park when an ye no. Nay likely her length.</h5>
                             </div>
-                            <img src="./assets/img/blog-4.jpg" alt="" class="rb-img-bottom">
+                            <img src="./assets/img/blog-4.jpg" alt="" class="rb-img-bottom" />
                         </div>
                     </div>
                 </section>
@@ -283,7 +334,7 @@
         <footer class="footer">
             <div class="wrapper">
                 <!-- JOIN WAITLIST -->
-                <section class="join-waitlist"  data-aos="fade-down">
+                <section class="join-waitlist">
                     <h3 class="jw-title">Join millions of <span class="inline">creative people with Echo</span></h3>
                     <button class="btn btn-secondary">
                         <span>
@@ -292,15 +343,12 @@
                         </span>
                     </button>
                 </section>
-    
+
                 <!-- FOOTER -->
-                <section class="footer-menu" data-aos="zoom-in-down">
+                <section class="footer-menu">
                     <div class="fm-company-desc">
                         <h5 class="fm-title">Echo</h5>
-                        <p class="fm-desc">
-                            Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. 
-                            Indulgence way everything joy alteration boisterous the attachment.
-                        </p>
+                        <p class="fm-desc">Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.</p>
                     </div>
                     <div class="fm-list">
                         <ul class="fm-company">
@@ -309,7 +357,7 @@
                                 <a href="">About Us</a>
                             </li>
                             <li class="fm-link-list">
-                                <a href="">Careers</a> 
+                                <a href="">Careers</a>
                             </li>
                             <li class="fm-link-list">
                                 <a href="">Blog</a>
@@ -322,7 +370,7 @@
                         <ul class="fm-product">
                             <li class="fm-title">Product</li>
                             <li class="fm-link-list">
-                                <a href="">Invoicing Platform</a> 
+                                <a href="">Invoicing Platform</a>
                             </li>
                             <li class="fm-link-list">
                                 <a href="">Accounting Platform</a>
@@ -336,11 +384,9 @@
                         </ul>
 
                         <ul class="fm-resources">
-                            <li class="fm-title">
-                                Resources
-                            </li>
+                            <li class="fm-title">Resources</li>
                             <li class="fm-link-list">
-                                <a href="">Proposal Template</a> 
+                                <a href="">Proposal Template</a>
                             </li>
                             <li class="fm-link-list">
                                 <a href="">Invoice Template</a>
@@ -358,8 +404,8 @@
                 <!-- COPYRIGHT -->
                 <section class="footer-bottom">
                     <div class="fb-copyright">
-                        2022 <a href="">Echo.</a> All rights reserved. 
-                        <a href="">Privacy Policy</a> 
+                        2022 <a href="">Echo.</a> All rights reserved.
+                        <a href="">Privacy Policy</a>
                         <a href="">Terms of Services</a>
                     </div>
                     <div class="fb-supported">
@@ -372,10 +418,5 @@
         <script src="https://kit.fontawesome.com/d8beacd362.js" crossorigin="anonymous"></script>
         <script src="assets/js/script.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init({
-            duration: 1000
-          });
-        </script>
     </body>
 </html>

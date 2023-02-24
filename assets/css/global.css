@@ -20,7 +20,7 @@
 }
 
 .btn-primary {
-    background-color: #3734A9;
+    background-color: #3734a9;
     border: none;
 }
 
@@ -59,17 +59,14 @@
     transition: all 0.5s ease-in-out;
 }
 
-
 @media screen and (max-width: 1024px) {
     .wrapper {
         padding: 0 48px;
     }
-    
 }
 
 @media screen and (max-width: 426px) {
     .wrapper {
         padding: 0 32px;
     }
-    
 }

@@ -1,5 +1,5 @@
 .footer {
-    background-color: #1B1C31;
+    background-color: #1b1c31;
 }
 
 .join-waitlist {
@@ -8,7 +8,7 @@
 }
 
 .jw-title {
-    color: #FFFFFF;
+    color: #ffffff;
     font-style: normal;
     font-weight: 500;
     font-size: 53px;
@@ -38,13 +38,14 @@
     border-bottom: 1px solid #404444;
     color: white;
     display: flex;
-    
+
     gap: 0 116px;
     justify-content: space-between;
     padding: 42px 0 106px 0;
 }
 
-.fm-company-desc, .fm-list {
+.fm-company-desc,
+.fm-list {
     flex-basis: 50%;
 }
 
@@ -72,7 +73,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    gap: 32px
+    gap: 32px;
 }
 
 .fm-list ul {
@@ -119,8 +120,9 @@
     transition: all 0.5s ease-in-out;
 }
 
-.fb-copyright :nth-child(2)::before, .fb-copyright :nth-child(3)::before {
-    content: ' -- ';
+.fb-copyright :nth-child(2)::before,
+.fb-copyright :nth-child(3)::before {
+    content: " -- ";
 }
 
 @media screen and (max-width: 1024px) {

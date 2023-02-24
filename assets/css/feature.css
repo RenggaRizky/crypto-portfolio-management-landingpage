@@ -1,5 +1,5 @@
 .feature {
-    background-color: #3734A9;
+    background-color: #3734a9;
     color: white;
 }
 
@@ -57,17 +57,17 @@
 }
 
 .f-benefit-list-text .f-benefit-list-title {
-    color: #E8F2FF !important; 
+    color: #e8f2ff !important;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 32px;    
+    line-height: 32px;
     letter-spacing: -0.02em;
     margin: 0 0 6px 0;
 }
 
-.f-benefit-list-text  .f-benefit-list-desc {
-    color: #A0B3E9;
+.f-benefit-list-text .f-benefit-list-desc {
+    color: #a0b3e9;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -106,7 +106,7 @@
 }
 
 .f-play-btn .fa-play {
-    color: #FF7F5C;
+    color: #ff7f5c;
     font-size: 32px;
     position: absolute;
     top: 25%;
@@ -128,7 +128,7 @@
         height: 80px;
         padding: 24px;
     }
-    
+
     .f-benefit-list-text .f-benefit-list-desc {
         font-size: 16px;
         line-height: 28px;
