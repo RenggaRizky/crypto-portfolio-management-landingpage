@@ -43,20 +43,55 @@ fPlayBtn.addEventListener("mouseleave", () => {
     faPlay.style.transform = "scale(1) translate(50%, 25%)";
 });
 
-const modal = document.getElementById("modalWrapper");
+const formAuth = document.querySelectorAll("form.modal-content");
+formAuth.forEach((element) => {
+    element.addEventListener("submit", (event) => {
+        event.preventDefault();
+    });
+});
+
+const iframe = document.querySelectorAll("iframe");
+const modal = document.querySelectorAll(".modal");
+const close = document.querySelectorAll(".close");
+
 const btnSignIn = document.getElementById("btnSignIn");
-const close = document.getElementsByClassName("close")[0];
+const btnStartFree = document.getElementById("btnStartFree");
+const btnSeeHowItWorks = document.querySelector(".btn-play-wrapper");
+const btnFPlayBtn = document.querySelector(".f-play-btn");
 
-btnSignIn.addEventListener("click", () => {
-    modal.style.display = "block";
-});
+const openModal = (button, number) => {
+    button.addEventListener("click", () => (modal[number].style.display = "block"));
+};
 
-close.addEventListener("click", () => {
-    modal.style.display = "none";
-});
+openModal(btnSignIn, 0);
+openModal(btnStartFree, 1);
+openModal(btnSeeHowItWorks, 2);
+openModal(btnFPlayBtn, 3);
 
-window.addEventListener("click", (event) => {
-    if (event.target == modal) {
-        modal.style.display = "none";
+for (let i = 0; i < 4; i++) {
+    if (i === 2) {
+        close[i].addEventListener("click", () => {
+            iframe[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', "*");
+            modal[i].style.display = "none";
+        });
+    } else if (i === 3) {
+        close[i].addEventListener("click", () => {
+            iframe[1].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', "*");
+            modal[i].style.display = "none";
+        });
     }
-});
+    close[i].addEventListener("click", () => (modal[i].style.display = "none"));
+}
+
+for (let i = 0; i < 4; i++) {
+    window.addEventListener("click", (event) => {
+        if (event.target == modal[i]) {
+            if (i === 2) {
+                iframe[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', "*");
+            } else if (i === 3) {
+                iframe[1].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', "*");
+            }
+            modal[i].style.display = "none";
+        }
+    });
+}

@@ -182,6 +182,10 @@
     max-width: 1440px;
 }
 
+.content-video {
+    display: block !important;
+}
+
 .form-modal {
     flex-basis: 95%;
     padding: 32px 16px;
@@ -275,12 +279,23 @@
     width: 100%;
     height: 40px;
     border: 0;
-    background: #115dfc;
+    background: #3734a9;
     border-radius: 7px;
     outline: none;
     color: #ffffff;
     cursor: pointer;
 }
+
+.sign-in_btn:hover {
+    background-color: #5955ca;
+    transition: all 0.5s ease-in-out;
+}
+
+.sign-in_btn:active {
+    outline: rgb(55, 52, 169, 0.5) solid 5px;
+    transition: none;
+}
+
 .separator {
     width: 100%;
     display: flex;
@@ -314,6 +329,16 @@
     cursor: pointer;
 }
 
+.sign-in_ggl:hover {
+    background-color: #faf8f8;
+    transition: all 0.5s ease-in-out;
+}
+
+.sign-in_ggl:active {
+    outline: rgb(250, 250, 250, 0.5) solid 5px;
+    transition: none;
+}
+
 .sign-in_apl {
     width: 100%;
     height: 40px;
@@ -330,10 +355,31 @@
     cursor: pointer;
 }
 
+.sign-in_apl:hover {
+    background-color: #1d1d1d;
+    transition: all 0.5s ease-in-out;
+}
+
+.sign-in_apl:active {
+    outline: rgba(33, 33, 33, 0.5) solid 5px;
+    transition: none;
+}
+
 .note {
     font-size: 0.75rem;
     color: #8b8e98;
     text-decoration: underline;
+    cursor: pointer;
+}
+
+.modal-video {
+    padding: 50px 0 0 0;
+    height: 360px;
+}
+
+.modal-video iframe {
+    height: 100%;
+    width: 100%;
 }
 
 @media screen and (min-width: 1920px) {
