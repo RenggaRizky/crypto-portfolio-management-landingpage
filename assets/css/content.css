@@ -80,12 +80,22 @@
         margin: 88px 0 64px 0;
     }
 
+    .title-related-companies {
+        font-size: 18px;
+    }
+
     .of-img {
         width: 90%;
     }
 
     .of-title {
-        font-size: 46px;
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .of-desc {
+        font-size: 14px;
+        line-height: 21px;
     }
 
     img[alt="feature-2"] {
@@ -95,7 +105,6 @@
 
 @media screen and (max-width: 768px) {
     .title-related-companies {
-        font-size: 18px;
         margin: 0 0 32px 0;
     }
 
@@ -110,14 +119,10 @@
     }
 
     .of-title {
-        font-size: 36px;
-        line-height: 42px;
         margin: 0 0 22px 0;
     }
 
     .of-desc {
-        font-size: 14px;
-        line-height: 21px;
         margin: 0 0 22px 0;
     }
 

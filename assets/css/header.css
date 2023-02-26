@@ -104,6 +104,16 @@
         padding: 0 48px;
     }
 
+    .header-content .hero-title {
+        font-size: 52px;
+        line-height: 64px;
+    }
+
+    .header-content .hero-desc {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
     .inline::before {
         content: none;
         white-space: normal;
@@ -118,14 +128,7 @@
 
 @media screen and (max-width: 768px) {
     .header-content .hero-title {
-        font-size: 52px;
-        line-height: 64px;
         margin: 60px 0 0 0;
-    }
-
-    .header-content .hero-desc {
-        font-size: 18px;
-        line-height: 26px;
     }
 
     .dashboard-container {

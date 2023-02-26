@@ -74,6 +74,7 @@
     display: flex;
     justify-content: space-between;
     gap: 32px;
+    flex-wrap: wrap;
 }
 
 .fm-list ul {
@@ -127,16 +128,19 @@
 
 @media screen and (max-width: 1024px) {
     .fm-company-desc {
-        flex-basis: 40%;
+        flex-basis: 30%;
     }
 
     .fm-list {
-        flex-basis: 60%;
-        justify-content: space-around;
+        flex-basis: 70%;
     }
 
     .footer-menu {
         gap: 0 88px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
     }
 }
 
